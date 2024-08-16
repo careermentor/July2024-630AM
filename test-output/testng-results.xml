@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-15T07:29:47 IST" name="Default suite" finished-at="2024-08-15T07:29:56 IST" duration-ms="9500">
+    <groups>
+    </groups>
+    <test started-at="2024-08-15T07:29:47 IST" name="Default test" finished-at="2024-08-15T07:29:56 IST" duration-ms="9500">
+      <class name="org.wipro.aumw.auto.testcases.LoginScenarios">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:org.wipro.aumw.auto.testcases.LoginScenarios@130c12b7]" started-at="2024-08-15T07:29:47 IST" name="launchBrowser" finished-at="2024-08-15T07:29:54 IST" duration-ms="7098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="tc01_validloginfunctionality()[pri:0, instance:org.wipro.aumw.auto.testcases.LoginScenarios@130c12b7]" started-at="2024-08-15T07:29:54 IST" name="tc01_validloginfunctionality" finished-at="2024-08-15T07:29:55 IST" duration-ms="733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_validloginfunctionality -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:org.wipro.aumw.auto.testcases.LoginScenarios@130c12b7]" started-at="2024-08-15T07:29:55 IST" name="closeBrowser" finished-at="2024-08-15T07:29:56 IST" duration-ms="1549" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- org.wipro.aumw.auto.testcases.LoginScenarios -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,4 @@
+This is text file
+file can be any type
+excel is file where we can store the data
+this is called java program
