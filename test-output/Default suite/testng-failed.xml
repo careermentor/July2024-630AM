@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.wipro.aumw.auto.testcases.LoginScenarios">
+      <class name="org.wipro.aumw.auto.testcases.SeachFunctionality">
         <methods>
+          <include name="tc03_validsearchinfunctionality"/>
           <include name="launchBrowser"/>
-          <include name="tc01_validloginfunctionality"/>
           <include name="closeBrowser"/>
         </methods>
-      </class> <!-- org.wipro.aumw.auto.testcases.LoginScenarios -->
+      </class> <!-- org.wipro.aumw.auto.testcases.SeachFunctionality -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,6 +2,7 @@ package org.wipro.aumw.auto.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.wipro.aumw.auto.utilitiesPkg.ReadDataPropFile;
 
 public class SignupPage 
@@ -14,19 +15,32 @@ public class SignupPage
 		this.driver=driver;
 	}
 
-	public void enter_username(String uname) throws Exception
+	public void click_createnewaccount() throws Exception
 	{
-		driver.findElement(By.id(ReadDataPropFile.readelement("login_username_id"))).sendKeys(uname);
+		driver.findElement(By.xpath(ReadDataPropFile.readelement("login_createnewaccount_xpath"))).click();
 	}
 	
-	public void enter_password(String pass) throws Exception
+	public void enter_firstname(String fname) throws Exception
 	{
-		driver.findElement(By.name(ReadDataPropFile.readelement("login_password_name"))).sendKeys(pass);
+		driver.findElement(By.name(ReadDataPropFile.readelement("signup_firstname_name"))).sendKeys(fname);
 	}
 	
-	public void click_login() throws Exception
+	public void select_dob_day(String day) throws Exception
 	{
-		driver.findElement(By.cssSelector(ReadDataPropFile.readelement("login_loginbttn_css"))).click();
+		
+		Select gen = new Select(driver.findElement(By.name(ReadDataPropFile.readelement("signup_dob_day_name"))));
+		
+		gen.selectByVisibleText(day);
+	}
+	
+	public void click_male() throws Exception
+	{
+		driver.findElement(By.xpath(ReadDataPropFile.readelement("signup_gender_xpath"))).click();
+	}
+	
+	public void click_signup() throws Exception
+	{
+		driver.findElement(By.name(ReadDataPropFile.readelement("signup_submit_name"))).click();
 	}
 	
 }

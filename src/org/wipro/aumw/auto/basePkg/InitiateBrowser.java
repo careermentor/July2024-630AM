@@ -1,5 +1,7 @@
 package org.wipro.aumw.auto.basePkg;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -28,7 +30,9 @@ public class InitiateBrowser
 		}
 		
 		driver.get(ReadDataPropFile.readconfig("ApplicationURL"));
-		
+		driver.manage().window().maximize();
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(300));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	}
 	
 	@AfterMethod
